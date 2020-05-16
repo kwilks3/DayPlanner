@@ -20,7 +20,20 @@
     <h2 id="today"></h2>
     <!-- create inputs for each hour of the day   -->
     <!-- each input should have a label w/ the hour of the day and a save button  -->
-
+    <form class="container">
+      <section
+        id="hours"
+        class="form-group row row-cols-3 justify-content-sm-center"
+      >
+        <label for="9am" class="col-sm-2">9 AM</label>
+        <section class="col-sm-8">
+          <input id="9am" class="form-control form-control-lg" type="text" />
+          <section class="col-sm-2">
+            <button class="btn btn-primary" type="submit">Save</button>
+          </section>
+        </section>
+      </section>
+    </form>
     <script src="./assets/script.js"></script>
   </body>
 </html>
