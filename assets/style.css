@@ -1,1 +1,23 @@
 /* create styles for past, present, and future time blocks */
+.top {
+  background-color: #96ceb4;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-family: cursive;
+  color: white;
+}
+label {
+  font-family: cursive;
+}
+.btn-primary {
+  background-color: #96ceb4;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: #96ceb4;
+  border: 2px solid;
+  border-color: #96ceb4;
+}
