@@ -3,5 +3,5 @@
 // on click of a save button take the input from the user and save it to local storage
 // include prevent default to ensure that input is not erased
 
-var now = moment();
+var now = moment().format("dddd, MMM Do, YYYY");
 $("#today").text(now);
