@@ -21,3 +21,14 @@ label {
   border: 2px solid;
   border-color: #96ceb4;
 }
+
+.future {
+  background-color: #588c7e;
+}
+.past {
+  background-color: #d96459;
+}
+
+.present {
+  background-color: #f2e394;
+}
