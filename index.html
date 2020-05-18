@@ -1,4 +1,137 @@
-<!-- Create header with page title -->
-<!-- Create area for dynamic date -->
-<!-- create inputs for each hour of the day   -->
-<!-- each input should have a label w/ the hour of the day and a save button  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Work Day Planner</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script src="https://code.jquery.com/jquery.js"></script>
+  </head>
+  <body>
+    <section class="top">
+      <!-- Create header with page title -->
+      <h1>Work Day Planner</h1>
+      <!-- Create area for dynamic date -->
+      <h2 id="today"></h2>
+    </section>
+    <!-- create inputs for each hour of the day   -->
+    <!-- each input should have a label w/ the hour of the day and a save button  -->
+    <form class="container">
+      <section
+        id="hours"
+        class="form-group row row-cols-3 justify-content-center"
+      >
+        <label for="9am" class="col-sm-2">9 AM</label>
+        <section class="col-sm-8">
+          <input id="9am" class="form-control form-control-lg" type="text" />
+          <section class="col-sm-2">
+            <button class="btn btn-primary" type="submit">Save</button>
+          </section>
+        </section>
+      </section>
+      <section
+        id="hours"
+        class="form-group row row-cols-3 justify-content-center"
+      >
+        <label for="10am" class="col-sm-2">10 AM</label>
+        <section class="col-sm-8">
+          <input id="10am" class="form-control form-control-lg" type="text" />
+          <section class="col-sm-2">
+            <button class="btn btn-primary" type="submit">Save</button>
+          </section>
+        </section>
+      </section>
+      <section
+        id="hours"
+        class="form-group row row-cols-3 justify-content-center"
+      >
+        <label for="11am" class="col-sm-2">11 AM</label>
+        <section class="col-sm-8">
+          <input id="11am" class="form-control form-control-lg" type="text" />
+          <section class="col-sm-2">
+            <button class="btn btn-primary" type="submit">Save</button>
+          </section>
+        </section>
+      </section>
+      <section
+        id="hours"
+        class="form-group row row-cols-3 justify-content-center"
+      >
+        <label for="12pm" class="col-sm-2">12 PM</label>
+        <section class="col-sm-8">
+          <input id="12pm" class="form-control form-control-lg" type="text" />
+          <section class="col-sm-2">
+            <button class="btn btn-primary" type="submit">Save</button>
+          </section>
+        </section>
+      </section>
+      <section
+        id="hours"
+        class="form-group row row-cols-3 justify-content-center"
+      >
+        <label for="1pm" class="col-sm-2">1 PM</label>
+        <section class="col-sm-8">
+          <input id="1pm" class="form-control form-control-lg" type="text" />
+          <section class="col-sm-2">
+            <button class="btn btn-primary" type="submit">Save</button>
+          </section>
+        </section>
+      </section>
+      <section
+        id="hours"
+        class="form-group row row-cols-3 justify-content-center"
+      >
+        <label for="2pm" class="col-sm-2">2 PM</label>
+        <section class="col-sm-8">
+          <input id="2pm" class="form-control form-control-lg" type="text" />
+          <section class="col-sm-2">
+            <button class="btn btn-primary" type="submit">Save</button>
+          </section>
+        </section>
+      </section>
+      <section
+        id="hours"
+        class="form-group row row-cols-3 justify-content-center"
+      >
+        <label for="3pm" class="col-sm-2">3 PM</label>
+        <section class="col-sm-8">
+          <input id="3pm" class="form-control form-control-lg" type="text" />
+          <section class="col-sm-2">
+            <button class="btn btn-primary" type="submit">Save</button>
+          </section>
+        </section>
+      </section>
+      <section
+        id="hours"
+        class="form-group row row-cols-3 justify-content-center"
+      >
+        <label for="4pm" class="col-sm-2">4 PM</label>
+        <section class="col-sm-8">
+          <input id="4pm" class="form-control form-control-lg" type="text" />
+          <section class="col-sm-2">
+            <button class="btn btn-primary" type="submit">Save</button>
+          </section>
+        </section>
+      </section>
+      <section
+        id="hours"
+        class="form-group row row-cols-3 justify-content-center"
+      >
+        <label for="5pm" class="col-sm-2">5 PM</label>
+        <section class="col-sm-8">
+          <input id="5pm" class="form-control form-control-lg" type="text" />
+          <section class="col-sm-2">
+            <button class="btn btn-primary" type="submit">Save</button>
+          </section>
+        </section>
+      </section>
+    </form>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
