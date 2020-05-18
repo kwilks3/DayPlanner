@@ -1,11 +1,13 @@
 /* create styles for past, present, and future time blocks */
 .top {
   background-color: #96ceb4;
-  display: flex;
-  justify-content: center;
   margin-bottom: 10px;
   font-family: cursive;
   color: white;
+}
+.heading {
+  display: flex;
+  justify-content: center;
 }
 label {
   font-family: cursive;
