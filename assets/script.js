@@ -4,4 +4,13 @@
 // include prevent default to ensure that input is not erased
 
 var now = moment().format("dddd, MMM Do, YYYY");
-$("#today").text(now);
+$("#currentDay").text(now);
+var info = ["", "", "", "", "", "", "", "", "", ""];
+
+$("button").on("click", function (event) {
+  event.preventDefault();
+  info[this.value] = document.getElementsByClassName("hour")[this.value].value;
+  console.log(info);
+  //   var data = document.getElementsByClassName("hour")[i].value;
+  //   console.log(data);
+});
