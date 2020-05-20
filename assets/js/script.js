@@ -5,6 +5,7 @@
 var textBlock = document.getElementsByClassName("hour");
 var labeling = document.getElementsByTagName("label");
 var now = moment().format("dddd, MMM Do, YYYY");
+
 $("#currentDay").text(now);
 loadInfo();
 nowOrLater();
@@ -26,19 +27,21 @@ function loadInfo() {
   }
 }
 function nowOrLater() {
+  var currentHour = parseInt(moment().format("H"));
   for (var i = 0; i < labeling.length; i++) {
+    var block = parseInt(labeling[i].htmlFor);
+
     //if this hour < current hour set attribute class to past
-    if (labeling[i].htmlFor < moment().format("H")) {
+    if (block < currentHour) {
       $(textBlock[i]).addClass("past");
     }
     //if current hour =  hour set attribute class to present
-    if (labeling[i].htmlFor === moment().format("H")) {
+    if (block === currentHour) {
       $(textBlock[i]).addClass("present");
     }
     //else  set attribute class to future
-    else {
+    if (block > currentHour) {
       $(textBlock[i]).addClass("future");
     }
   }
 }
-console.log(textBlock[0]);
