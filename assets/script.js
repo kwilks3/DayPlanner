@@ -5,7 +5,7 @@
 
 var now = moment().format("dddd, MMM Do, YYYY");
 $("#currentDay").text(now);
-
+loadInfo();
 var saved = [];
 var times = ["9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"];
 $("button").on("click", function (event) {
@@ -24,4 +24,3 @@ function loadInfo() {
     document.getElementById(times[i]).value = saved[i];
   }
 }
-loadInfo();
