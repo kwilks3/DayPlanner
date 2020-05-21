@@ -19,7 +19,7 @@ $("button").on("click", function (event) {
 });
 
 function loadInfo() {
-  var saved = JSON.parse(localStorage.getItem("todoItems"));
+  var saved = JSON.parse(localStorage.getItem("todoItems")) || [];
   var times = ["9", "10", "11", "12", "13", "14", "15", "16", "17"];
 
   for (var i = 0; i < saved.length; i++) {
